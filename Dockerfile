@@ -25,10 +25,10 @@ RUN apk update \
 # AriaNG
 WORKDIR /usr/local/www/ariang
 
-RUN wget --no-check-certificate https://github.com/mayswind/AriaNg/releases/download/${ARIANG_VERSION}/AriaNg-${ARIANG_VERSION}.zip \
-    -O ariang.zip \
-    && unzip ariang.zip \
-    && rm ariang.zip \
+RUN wget --no-check-certificate https://github.com/Valaraukar86/AriaNg/archive/refs/heads/master.zip \
+    -O master.zip \
+    && unzip master.zip \
+    && rm master.zip \
     && chmod -R 755 ./
 
 WORKDIR /aria2
