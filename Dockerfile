@@ -25,7 +25,7 @@ RUN apk update \
 # AriaNG
 WORKDIR /usr/local/www/ariang
 
-RUN wget --no-check-certificate https://github.com/Valaraukar86/AriaNg/archive/refs/heads/master.zip \
+RUN wget --no-check-certificate  https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip \
     -O master.zip \
     && unzip master.zip \
     && rm master.zip \
