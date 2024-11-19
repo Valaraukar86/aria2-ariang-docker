@@ -26,9 +26,9 @@ RUN apk update \
 WORKDIR /usr/local/www/ariang
 
 RUN wget --no-check-certificate https://github.com/Valaraukar86/AriaNg/releases/download/${ARIANG_VERSION}/Fork-AriaNg-${ARIANG_VERSION}.zip \
-    -O ariang.zip \
-    && unzip ariang.zip \
-    && rm ariang.zip \
+    -O fork-ariang.zip \
+    && unzip fork-ariang.zip \
+    && rm fork-ariang.zip \
     && chmod -R 755 ./
 
 WORKDIR /aria2
